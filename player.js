@@ -18,6 +18,7 @@
 
 	win.stop();
 	win.focus();
+	doc.title = "NettleWeb";
 	his.scrollRestoration = "manual";
 	his.replaceState(void 0, "", "/");
 	body.innerHTML = "Loading... (1)";
@@ -102,7 +103,6 @@
 			letterbox: "on",
 			polyfills: false,
 			openUrlMode: "confirm",
-			splashScreen: false,
 			upgradeToHttps: true,
 			showSwfDownload: true,
 			allowScriptAccess: false
