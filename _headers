@@ -7,7 +7,7 @@
 	Cross-Origin-Embedder-Policy: credentialless
 
 /
-	Content-Security-Policy: base-uri 'self'; font-src 'self'; script-src 'self'; worker-src 'self'; form-action 'self'; connect-src 'self' wss: https:; manifest-src 'self'; script-src-attr 'self'; script-src-elem 'self' https:;
+	Content-Security-Policy: base-uri 'self'; font-src 'self'; script-src 'self'; worker-src 'self'; form-action 'self'; connect-src 'self' wss: https:; manifest-src 'self'; script-src-attr 'self'; script-src-elem 'self';
 
 /ext/webemu/
 	Content-Type: application/xhtml+xml

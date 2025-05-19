@@ -5,6 +5,7 @@
 	 */
 	const self = _;
 	const origin = self.location.origin;
+	const notLocal = origin !== "http://localhost:8000";
 	const cacheName = "167e1f07-b59a-4742-bb45-15cf3caabcce";
 	const errorResponse = Response.error();
 
@@ -36,17 +37,15 @@
 		}
 
 		const url = new URL(request.url);
-		switch (url.protocol) {
-			case "http:":
-			case "https:":
-				break;
-			default:
-				return await optFetch(request);
-		}
+		const hostname = url.hostname;
+		const sameOrigin = url.origin === origin;
+
+		if (url.protocol !== "https:" && notLocal)
+			return errorResponse;
 
 		switch (request.destination) {
 			case "":
-				if (url.origin === origin && url.pathname === "/manifest.json") {
+				if (sameOrigin && url.pathname === "/manifest.json") {
 					return await optFetch(url, {
 						body: null,
 						mode: "same-origin",
@@ -56,12 +55,16 @@
 				break;
 			case "video":
 				return await optFetch(request); // video requests are never cached
+			case "script":
+				if (!sameOrigin && hostname.indexOf("google") < 0 && hostname.indexOf("firebase") < 0)
+					return errorResponse;
+				break;
 			default:
 				break;
 		}
 
 		const res = await caches.match(request, { cacheName }) || await e.preloadResponse || await optFetch(request);
-		if (res.ok && origin !== "http://localhost:8000") {
+		if (res.ok && notLocal) {
 			try {
 				await (await caches.open(cacheName)).put(request, res.clone());
 			} catch (err) {
