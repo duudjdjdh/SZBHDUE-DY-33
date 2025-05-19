@@ -93,8 +93,17 @@
 		body.innerHTML = "";
 		body.appendChild(frame);
 
+		let base;
+
+		{
+			const { origin, pathname: p } = new URL(url);
+			const i = p.lastIndexOf("/");
+			base = i >= 0 ? origin + p.slice(0, i) : origin;
+		}
+
 		await frame.load({
 			url: url,
+			base: base,
 			wmode: "opaque",
 			scale: "showAll",
 			quality: "best",
@@ -104,7 +113,6 @@
 			polyfills: false,
 			openUrlMode: "confirm",
 			upgradeToHttps: true,
-			showSwfDownload: true,
 			allowScriptAccess: false
 		});
 
