@@ -46,16 +46,14 @@
 				throw new Error("Remote returned invalid response: " + res.status);
 
 			const d = parser.parseFromString(await res.text(), "application/xhtml+xml");
-			d.title = "NettleWeb";
-			d.querySelector("script[src=\"main.js\"]").remove();
-			doc.documentElement.replaceWith(d.documentElement);
+			const e = d.querySelector("script[src=\"main.js\"]");
+			e.remove();
+			e.setAttribute("async", "");
+			e.setAttribute("defer", "");
 
-			const e = d.createElement("script");
-			e.src = "main.js";
-			e.type = "text/javascript";
-			e.async = true;
-			e.defer = true;
-			doc.body.appendChild(e);
+			doc.documentElement.replaceWith(d.documentElement);
+			doc.body.appendChild(e.cloneNode(false));
+			doc.title = "\u2060";
 		} catch (err) {
 			console.error("Failed to initialize page content: ", err);
 			body.textContent = "Error: Failed to load page. Message: " + String(err);
