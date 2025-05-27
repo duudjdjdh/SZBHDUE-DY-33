@@ -1,4 +1,5 @@
-body {
+body,
+svg {
 	color: #e0e0e0;
 	background: #202020;
 }
@@ -85,14 +86,14 @@ optgroup,
 }
 
 #bio,
-#ac-bio
+#ac-bio,
 #nwidget>div>span,
 #ac-friends>div>span,
+#services-page>div>span,
 .list-body>div>div>.desc {
 	color: #c0c0c0;
 }
 
-#idisc
 #footer,
 #game-disclaimer,
 .list-body>div>div>.time {

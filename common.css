@@ -48,7 +48,7 @@
 	background: #a0a0a0;
 }
 
-body {
+body, svg {
 	position: absolute;
 	display: block;
 	width: 100%;
