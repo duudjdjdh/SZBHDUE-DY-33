@@ -58,6 +58,6 @@
 			<button id="frame-close" type="button" title="Close"></button>
 			<button id="frame-expand" type="button" title="Enter fullscreen"></button>
 		</div>
-		<script type="text/javascript" src="main.js" blocking="render" integrity="sha256-+qVJvnmjOhqrzqCRDe8w86THipynNSBQ+PlSpxMHdI4="></script>
+		<script type="text/javascript" src="main.js" blocking="render" integrity="sha256-c8ksfT0QKkWZDZHE2zIffzqeVOAgWzGn3HE9uXEl7Y4="></script>
 	</div></foreignObject>
 </svg>
