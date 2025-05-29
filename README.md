@@ -4,25 +4,21 @@
 [![Discord Shield](https://img.shields.io/discord/998658232207814667?style=for-the-badge&logo=Discord&logoColor=%23ffffff&label=Discord&labelColor=%23303030&color=%23004080
 )](https://discord.gg/djdH3kVd4v) [![Version](https://img.shields.io/github/manifest-json/v/nettleweb/nettleweb?style=for-the-badge&label=Version&labelColor=%23303030)](https://nettleweb.com/) [![Last Update](https://img.shields.io/github/last-commit/nettleweb/nettleweb?style=for-the-badge&label=Last%20Update&labelColor=%23303030&color=%23004080)](https://nettleweb.com/)
 
-NettleWeb is a free, open-source unblocked online community platform that allows users to chat, watch videos and share games. Its goal is to bring every internet user an unrestricted and private environment, because we believe that it is incorrect to steal user data without their proper consent, and everyone deserves the right to do whatever they want. <br />
+*The free, open source unblocked online community platform*
 
-NettleWeb is, and will always be, free and open-source. You can however show us your care by giving a star or contributing to this project (see the contributing section below for details). It will significantly improve the project's future development. <br />
+[Main Link](https://nettleweb.com/) | [Mirrors & Data Links](https://docs.google.com/document/d/1qh4VDIIYyi37f4nYaUqEiYd-CbI7dN6Bsaoy0X4hsQ0/edit) | [Discord](https://discord.gg/djdH3kVd4v)
 
-[Main Link](https://nettleweb.com/) | [Mirror 1](https://nettleweb.pages.dev/) | [Mirror 2](https://nettleweb.github.io) | [Discord](https://discord.gg/djdH3kVd4v)
+## About
+NettleWeb is a free, open-source unblocked online community platform that allows users to chat, watch videos and share games. Its goal is to bring every internet user an unrestricted and private environment, because we believe that it is incorrect to steal user data without their proper consent, and everyone deserves the right to do whatever they want.
+
+NettleWeb is, and will always be, free and open-source. You can however show us your care by giving a star or contributing to this project (see the contributing section below for details). It will significantly improve the project's future development.
 
 ## Features
-- Chat - Server/DM/Groups/AI Chat
-- Games - HTML5/Flash/DOS
-- Videos
-- Emulators/Apps
-
-### Planned Features (TODO list)
-- [ ] Video calls in DM/Group chat
-- [ ] Reward system for uploading games
-- [ ] Sorting/notification dots in group channel lists
-- [ ] Persistent storage for Play.js and JS-DOS
-- [ ] Better home page (improve UI design)
-- [ ] Standalone Android chat client
+- **Chat** - Server/DM/Groups/AI Chat
+- **Games** - 5000+, HTML5/Flash/DOS
+- **Videos** - Unblocked YouTube/SoundCloud
+- **Emulators/Apps** - Proxy, game emulators, PC emulators
+- **Simple UI design** - No bloaty features, everything runs smoothly on low RAM devices
 
 ## Mirror Links
 We are no longer maintaining any mirror links, because listed links could be blocked very easily. Please consider using data URL for bypassing browser extensions, or self-host a mirror link for bypassing external network restrictions. (See below for instructions)
