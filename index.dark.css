@@ -4,10 +4,10 @@ svg {
 	background: #202020;
 }
 
+header,
 option,
 optgroup,
-#nwidget,
-#navigation-bar {
+#nwidget {
 	background: #404040;
 }
 
@@ -23,16 +23,16 @@ optgroup,
 }
 
 #version,
-#nav-bar>button,
-#game-category>button {
+header>nav>ul>li>button,
+#game-category>ul>li>button {
 	color: #d0d0d0;
 }
 
 #id,
 #ac-un,
 #chatmode>button,
-#nav-bar>button[data-current],
-#game-category>button[data-current] {
+header>nav>ul>li>button[data-current],
+#game-category>ul>li>button[data-current] {
 	color: #ffffff;
 }
 
@@ -94,8 +94,7 @@ optgroup,
 	color: #c0c0c0;
 }
 
-#footer,
-#game-disclaimer,
+footer,
 .list-body>div>div>.time {
 	color: #a0a0a0;
 }
@@ -149,7 +148,7 @@ optgroup,
 }
 
 #chat,
-#footer,
+footer,
 #ac-prof,
 #content>div,
 #install:hover {
@@ -272,7 +271,7 @@ optgroup,
 }
 
 @media all and (max-width: 800px) {
-	#nav-bar {
+	header>nav {
 		background: #404040;
 	}
 }
